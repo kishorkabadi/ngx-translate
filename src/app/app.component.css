@@ -1,0 +1,100 @@
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+
+.margin-top {
+  margin-top: 5rem;
+}
+
+h1 {
+  letter-spacing: 0.2rem;
+  color: rgb(71, 71, 71);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: rgb(71, 71, 71);
+  text-align: center;
+}
+
+p {
+  margin-right: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+button {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 0.8rem;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  border: 2px solid transparent;
+  padding: 10px 16px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.2rem;
+}
+
+button:hover {
+  color: rgb(86, 86, 86);
+  background-color: rgb(241, 241, 241);
+}
+
+.active {
+  border: 2px solid rgb(86, 86, 86);
+  font-weight: 900;
+}
+
+.color-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+  width: 50%;
+}
+.element {
+  margin: 0.2rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.yellow {
+  color: #ffd300;
+}
+
+.orange {
+  color: #ff9100;
+}
+
+.purple {
+  color: purple;
+}
+
+.pink {
+  color: #f5aeba;
+}

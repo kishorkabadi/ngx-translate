@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageEnum } from './enums/language.enum';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'ngx-translate';
+  languageEnum = LanguageEnum;
+  selectedLanguage: LanguageEnum = LanguageEnum.English;
+
+  constructor(public translate: TranslateService) {}
+
+  changeLanguage(language: LanguageEnum): void {
+    this.translate.use(language);
+    this.selectedLanguage = language;
+  }
 }
